@@ -20,7 +20,7 @@ Dentro de un desarrollo puede importarse del siguiente modo:
    import "@lobaton/seach/dist/search.bundle.css";
    import "@lobaton/search/src/search.js";
 
-Si se usa un **navegdor**, hay dos alternativas:
+Si se usa un **navegador**, hay dos alternativas:
 
 - Si se usa el sabor *bundle*, se puede prescindir de la carga de dos de sus
   dependencias (`leaflet-search`_ y `fuse.js`)\ [#]_:
