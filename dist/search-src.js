@@ -742,7 +742,9 @@ function getItems(adjofer, pattern) {
   var pathData = adjofer.Centro.prototype.options.mutable;
   return new fuse_js__WEBPACK_IMPORTED_MODULE_5___default.a(adjofer.cluster.getLayers(), {
     keys: [pathData + ".id.nom", pathData + ".nom", pathData + ".id.loc", pathData + ".id.mun"],
-    minMatchCharLength: 3
+    minMatchCharLength: 3,
+    shouldSort: true,
+    threshold: 0.6
   }).search(pattern);
 } // Issue #51
 
