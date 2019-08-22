@@ -1,12 +1,12 @@
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("leaflet-search"), require("Fuse"));
+		module.exports = factory(require("leaflet-search"), require("fuse.js"));
 	else if(typeof define === 'function' && define.amd)
-		define(["leaflet-search", "Fuse"], factory);
-	else {
-		var a = typeof exports === 'object' ? factory(require("leaflet-search"), require("Fuse")) : factory(root["L"]["Control"]["Search"], root["Fuse"]);
-		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
-	}
+		define("search", ["leaflet-search", "fuse.js"], factory);
+	else if(typeof exports === 'object')
+		exports["search"] = factory(require("leaflet-search"), require("fuse.js"));
+	else
+		root["Lo"] = root["Lo"] || {}, root["Lo"]["search"] = factory(root["L"]["Control"]["Search"], root["Fuse"]);
 })(window, function(__WEBPACK_EXTERNAL_MODULE__31__, __WEBPACK_EXTERNAL_MODULE__32__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
@@ -802,7 +802,7 @@ function searchBar(adjofer, position) {
   return control;
 } // Fin issue #51
 
-/* harmony default export */ __webpack_exports__["default"] = (Lo.search = {
+/* harmony default export */ __webpack_exports__["default"] = ({
   bar: searchBar,
   getItems: getItems
 });

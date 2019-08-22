@@ -79,7 +79,7 @@ export function searchBar(adjofer, position) {
 }
 // Fin issue #51
 
-export default Lo.search = {
+export default {
    bar: searchBar,
    getItems: getItems
 }

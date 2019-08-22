@@ -102,8 +102,9 @@ module.exports = env => {
       output: {
          filename: `${filename}.js`,
          libraryTarget: "umd",
-         umdNamedDefine: false,
-         libraryExport: "default"
+         umdNamedDefine: true,
+         libraryExport: "default",
+         library: ["Lo", "search"]
       },
       externals: {
          "leaflet": {
