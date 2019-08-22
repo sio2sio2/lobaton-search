@@ -82,3 +82,4 @@ visibles en el mapa o agrupados dentro de un clúster.
 .. _@lobaton/core: https://github.com/sio2sio2/lobaton-core
 .. _leaflet-search: https://github.com/stefanocudini/leaflet-search
 .. _fuse.js: https://fusejs.io/
+.. _Leaflet: https://leafletjs.com
