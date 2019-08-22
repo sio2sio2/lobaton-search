@@ -1,5 +1,6 @@
 import Search from "leaflet-search";
 import Fuse from "fuse.js";
+import * as Lo from "@lobaton/core";
 
 /**
  * Obtiene los candidatos mediante una búsqueda difusa.
@@ -79,7 +80,7 @@ export function searchBar(adjofer, position) {
 }
 // Fin issue #51
 
-export default {
+export default Lo.search = {
    bar: searchBar,
    getItems: getItems
 }

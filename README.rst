@@ -14,15 +14,15 @@ Dentro de un desarrollo puede importarse del siguiente modo:
 
 .. code-block:: js
 
-   // Otras dependencias (leaflet, etc) ...
-   import "@lobaton/core";
+   import "@lobaton/core/dist/core.bundle.css";
+   import * as Lo from "@lobaton/core";
 
    import "@lobaton/seach/dist/search.bundle.css";
    import "@lobaton/search/src/search.js";
 
 Si se usa un **navegador**, hay dos alternativas:
 
-- Si se usa el sabor *bundle*, se puede prescindir de la carga de dos de sus
+- Si se usa el sabor *bundle*, se puede prescindir de la carga de sus dos
   dependencias (`leaflet-search`_ y `fuse.js`)\ [#]_:
 
   .. code-block:: html
@@ -74,8 +74,7 @@ visibles en el mapa o agrupados dentro de un clúster.
 
 .. rubric:: Notas al pie
 
-.. [#]  Las otras dos evidentes (`Leaflet`_ y `@lobaton/core`_), no están
-   incluidas.
+.. [#]  Pero será necesario cargar `Leaflet`_ y `@lobaton/core`_).
 
 .. _NodeJS: http://nodejs.org
 .. _Lobaton: https://github.com/sio2sio2/lobaton-core

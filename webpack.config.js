@@ -112,6 +112,12 @@ module.exports = env => {
             amd: "leaflet",
             commonjs: "leaflet",
             commonjs2: "leaflet"
+         },
+         "@lobaton/core": {
+            root: "Lo",
+            amd: "@lobaton/core",
+            commonjs: "@lobaton/core",
+            commonjs2: "@lobaton/core"
          }
       },
       module: {
