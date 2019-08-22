@@ -14,7 +14,9 @@ export function getItems(adjofer, pattern) {
                 pathData + ".nom",
                 pathData + ".id.loc",
                 pathData + ".id.mun"],
-         minMatchCharLength: 3
+         minMatchCharLength: 3,
+         shouldSort: true,
+         threshold: 0.6
       }
    ).search(pattern);
 }
