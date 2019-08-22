@@ -49,9 +49,9 @@ function confNoDeps() {
       externals: {
          "fuse.js": {
             root: "Fuse",
-            amd: "Fuse",
-            commonjs: "Fuse",
-            commonjs2: "Fuse"
+            amd: "fuse.js",
+            commonjs: "fuse.js",
+            commonjs2: "fuse.js"
          },
          "leaflet-search": {
             root: ["L", "Control", "Search"],
