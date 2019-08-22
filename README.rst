@@ -20,12 +20,10 @@ Dentro de un desarrollo puede importarse del siguiente modo:
    import "@lobaton/seach/dist/search.bundle.css";
    import "@lobaton/search/src/search.js";
 
-.. note:: El paquete importará, a su vez, el plugin `leaflet-seach`_ y
-   y la librería `fuse.js`_.
-
 Si se usa un **navegdor**, hay dos alternativas:
 
-- Si se usa el sabor *bundle*, se puede prescindir de sus dos dependencias:
+- Si se usa el sabor *bundle*, se puede prescindir de la carga de dos de sus
+  dependencias (`leaflet-search`_ y `fuse.js`)\ [#]_:
 
   .. code-block:: html
 
@@ -74,7 +72,13 @@ dos utilidades:
 En ambos casos, la búsqueda sólo se realiza entre los centros y localidades
 visibles en el mapa o agrupados dentro de un clúster.
 
+.. rubric:: Notas al pie
+
+.. [#]  Las otras dos evidentes (`Leaflet`_ y `@lobaton/core`_), no están
+   incluidas.
+
 .. _NodeJS: http://nodejs.org
 .. _Lobaton: https://github.com/sio2sio2/lobaton-core
+.. _@lobaton/core: https://github.com/sio2sio2/lobaton-core
 .. _leaflet-search: https://github.com/stefanocudini/leaflet-search
 .. _fuse.js: https://fusejs.io/
